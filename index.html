@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redirecting...</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #f0f2f5;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const targetUrl = `conisio://${params.get('Vault_Name')}/explore?projectID=${params.get('ProjID')}&documentid=${params.get('DocID')}&objecttype=1`;
+    window.location.replace(targetUrl);
+  </script>
+</body>
+</html>
+
+//Sample usage
+// https://yourdomain.com/redirect.html?Vault_Name=YourVaultName&ProjID=YourProjectID&DocID=YourDocumentID
