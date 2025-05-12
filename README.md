@@ -1,4 +1,6 @@
 # ConisioURL
+
+PDM link copied from OOTB option are not Microsoft teams friendly. The solution is to create https link and redirect to conisio from there.
 This is a high-performance redirection from an https link to a conisio link .
 
 1. Host this index file on a domain.
